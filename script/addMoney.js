@@ -73,17 +73,19 @@
 // })
 
 
-document.getElementById("add-money") .addEventListener("click", function (event)
+document.getElementById("add-money-btn").addEventListener("click", function (event)
 {
    event.preventDefault();
+
+   console.log('hello')
  const amount = getInputValueByID("Amount");
  const pin = getInputValueByID("pin"); 
 // console.log (amount,pin)
 
-const account = document.getElementById("Account-number").value ;
+const accountNumber = document.getElementById("Account-number").value ;
 const mainBalance = getInnerTextByID("main-balance")
 console.log(mainBalance) 
-const selectbank = document.getElementById("allbank").value;
+const selectBank = document.getElementById("allbank").value;
 console.log(selectBank)
 if(amount<0){
    alert("give positive number")
@@ -93,6 +95,7 @@ if(amount<0){
 
 
 
+// console.log(accountNumber.value.length)
 
 if(accountNumber.length === 11) {
    if(pin=== 1234) {

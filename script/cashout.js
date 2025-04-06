@@ -32,7 +32,7 @@ document.getElementById("cashout-btn").addEventListener("click", function(event)
     const mainBalance = getInnerTextByID("main-balance");
 
     console.log(mainBalance)
-    const selectbank = document.getElementById("allbank")
+    const selectBank = document.getElementById("allbank")
 
     if(amount>mainBalance){
         alert("invalid amount");
